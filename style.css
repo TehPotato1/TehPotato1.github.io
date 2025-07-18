@@ -69,3 +69,35 @@ main, .main {
   max-width: 900px;
   margin: 0 auto;
 }
+
+/* Responsive row for image + text */
+section.side-by-side {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 36px;
+  margin-bottom: 38px;
+}
+
+section.side-by-side img {
+  max-width: 330px;
+  height: auto;
+  border-radius: 7px;
+  margin-bottom: 0;
+}
+
+/* Responsive: stack image and text on small screens */
+@media (max-width: 900px) {
+  section.side-by-side {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  section.side-by-side img {
+    max-width: 95vw;
+    margin: 0 auto;
+  }
+  section.side-by-side, main, .main {
+    padding: 18px 3vw;
+  }
+}
