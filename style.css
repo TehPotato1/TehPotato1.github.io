@@ -27,117 +27,82 @@ nav a {
   text-decoration: none;
   color: #111;
   font-weight: 500;
+  font-size: 1rem;
+}
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 120px 20px 40px; /* space for header */
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  margin-bottom: 20px;
+}
+
+p {
   font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
-h1 a {
+a {
   text-decoration: none;
-  color: #111;
+  color: inherit;
 }
 
-/* Main content */
-main, .main {
-  padding: 24px 18px;
-  max-width: 900px;
-  margin: 0 auto;
+a:hover {
+  text-decoration: underline;
+  color: inherit;
 }
 
-h2, h3 {
+/* Form styles */
+form {
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   margin-bottom: 15px;
+  font-family: inherit;
+  background-color: #fff;
 }
 
-section {
-  margin-bottom: 38px;
+textarea {
+  min-height: 120px;
+  resize: vertical;
 }
 
-/* Responsive row for image + text sections */
-section.side-by-side {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 36px;
-  margin-bottom: 38px;
+button[type="submit"] {
+  background-color: #000;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-section.side-by-side img {
-  max-width: 330px;
-  height: auto;
-  border-radius: 7px;
-  margin-bottom: 0;
+button[type="submit"]:hover {
+  background-color: #444;
 }
 
-/* General images (also applies to in-section images) */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+form input[name="first_name"],
+form input[name="last_name"] {
+  width: calc(50% - 10px);
+  display: inline-block;
+  margin-right: 10px;
 }
 
-/* Footer (empty, but style it for future use) */
-footer {
-  margin-top: 60px;
-  padding: 30px 0;
-  text-align: center;
-  font-size: 0.95rem;
-  color: #777;
-  background: #f6f6f6;
-}
-
-/* List styles */
-ul {
-  margin: 18px 0;
-  padding-left: 24px;
-}
-li {
-  margin-bottom: 10px;
-}
-
-/* Responsive styles for mobile */
-@media (max-width: 900px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 14px 10px;
-  }
-  nav {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
-  nav a {
-    margin: 7px 10px 0 0;
-    font-size: 1rem;
-  }
-  h1 {
-    font-size: 1.7rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  section.side-by-side {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  section.side-by-side img {
-    max-width: 95vw;
-    margin: 0 auto;
-  }
-  section.side-by-side, main, .main {
-    padding: 18px 3vw;
-  }
-}
-
-@media (max-width: 500px) {
-  h1 {
-    font-size: 1.25rem;
-  }
-  nav a {
-    font-size: 0.97rem;
-  }
-  main, .main {
-    padding: 14px 2vw;
-  }
+form input[name="last_name"] {
+  margin-right: 0;
 }
