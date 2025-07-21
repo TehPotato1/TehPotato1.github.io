@@ -31,9 +31,9 @@ nav a {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 40px auto;
-  padding: 120px 20px 40px; /* space for header */
+  padding: 120px 40px 40px; /* increased side padding */
 }
 
 h1, h2, h3 {
@@ -109,5 +109,5 @@ form input[name="last_name"] {
 
 img {
   margin: 6px;
-  float: left;
+  float: right;
 }
