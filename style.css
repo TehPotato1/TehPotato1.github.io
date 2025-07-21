@@ -106,3 +106,8 @@ form input[name="last_name"] {
 form input[name="last_name"] {
   margin-right: 0;
 }
+
+img {
+  margin: 6px;
+  float: left;
+}
