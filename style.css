@@ -110,4 +110,8 @@ form input[name="last_name"] {
 img {
   margin: 6px;
   float: right;
+  vertical-align: middle;
+  object-fit: contain; 
+  margin-top: 40px; 
+  align-self: center;     /* has effect in flex/grid, safe to leave */
 }
